@@ -171,7 +171,6 @@ jobs:
         run: |
           echo "$RESULTS"
           for r in $RESULTS; do [ "$r" = success ] || exit 1; done
-
   fe-lint-build:
     name: Frontend Lint and Build
     runs-on: ubuntu-latest
